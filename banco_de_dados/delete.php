@@ -1,0 +1,1 @@
+<!-- apagará o registro selecionado -->
