@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +28,6 @@
         </div>
     </nav>
 
-
     <!-- formulário de cadastro -->
     <div class="row container">
         <p>&nbsp;</p>   <!-- para acrescentar uma linha vazia -->
@@ -35,6 +35,13 @@
             <fieldset class="formulario">
                 <legend><img src="images/avatarVerde.png" alt="imagem do usuario" width="100"></legend>
                 <h5 class="light center">Cadastro de clientes</h5>
+
+                <?php 
+                    if(isset($_SESSION['msg'])):
+                        echo $_SESSION['msg'];
+                        session_unset();
+                    endif;
+                ?>
 
                 <!-- campo nome -->
                 <div class="input-field col s12">
