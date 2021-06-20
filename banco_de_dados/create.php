@@ -9,4 +9,3 @@ $telefone   = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_NUMBER_INT); 
 $querySelect = $link->query("select email from tb_clientes");
 $array_emails = [];
 
-/* help */
