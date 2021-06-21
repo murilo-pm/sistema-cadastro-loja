@@ -1,32 +1,7 @@
 <?php session_start() ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- ENDEREÇO: http://localhost/sistema-cadastro-loja/ -->
-    <meta charset='utf-8'>
-    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
-    <title>Page Title</title>
-    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <!-- <script src='main.js'></script> -->
-</head>
-<body>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-     <!-- CSS do Materialize -->        <!-- O minificado carrega mais rápido -->
-     <link rel="stylesheet" href="materialize/css/materialize.min.css">
-
-
-    <nav class="purple darken-1">
-        <div class="nav-wrapper container">
-            <div class="brand-logo light">Sistema de Cadastro</div>
-            <ul class="right">
-                <li><a href=""><i class="material-icons left">account_circle</i>Cadastro</a></li>
-                <li><a href=""><i class="material-icons left">search</i>Consultas</a></li>
-            </ul>
-        </div>
-    </nav>
+<?php include_once 'includes/header.inc.php' ?>
+     
+    <?php include_once 'includes/menu.inc.php' ?>
 
     <!-- formulário de cadastro -->
     <div class="row container">
@@ -72,16 +47,5 @@
             </fieldset>
         </form>
     </div>
-
-     <!-- arquivos jQuery/Javascript -->
-    <script type="text/javascript" src="materialize/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-
-    <!-- inicialização do jQuery -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-        });
-    </script>
-</body>
-</html>
+    
+<?php include_once 'includes/footer.inc.php' ?>
